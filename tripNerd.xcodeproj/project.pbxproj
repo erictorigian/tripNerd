@@ -54,14 +54,46 @@
 		07179158207F90DF000C0220 /* tripNerd */ = {
 			isa = PBXGroup;
 			children = (
-				07179159207F90DF000C0220 /* AppDelegate.swift */,
-				0717915B207F90DF000C0220 /* ViewController.swift */,
-				0717915D207F90DF000C0220 /* Main.storyboard */,
+				0717916E207F911F000C0220 /* Services */,
+				0717916D207F9119000C0220 /* Model */,
+				0717916C207F9113000C0220 /* View */,
+				0717916B207F9105000C0220 /* Controller */,
 				07179160207F90E0000C0220 /* Assets.xcassets */,
-				07179162207F90E0000C0220 /* LaunchScreen.storyboard */,
 				07179165207F90E0000C0220 /* Info.plist */,
 			);
 			path = tripNerd;
+			sourceTree = "<group>";
+		};
+		0717916B207F9105000C0220 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0717915B207F90DF000C0220 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		0717916C207F9113000C0220 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0717915D207F90DF000C0220 /* Main.storyboard */,
+				07179162207F90E0000C0220 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0717916D207F9119000C0220 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0717916E207F911F000C0220 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				07179159207F90DF000C0220 /* AppDelegate.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
