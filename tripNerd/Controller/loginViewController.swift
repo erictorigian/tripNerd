@@ -39,7 +39,7 @@ class loginViewController: UIViewController {
                 PFUser.logInWithUsername(inBackground: usernameTextField.text!, password: passwordTextField.text!) { (user, error) in
                         if error == nil {
                             //logged in
-                            self.showAlert(title: "Success!", message: "You have logged into Trip Nerd")
+                            self.showAlert(title: "Thank you", message: "Thank you for logging into Trip Nerd.  Opening system now")
                         } else  {
                             //error logging in
                             self.showAlert(title: "Error Logging into TripNerd", message: (error?.localizedDescription)!)
@@ -48,7 +48,7 @@ class loginViewController: UIViewController {
                 
             }
         } else {
-            //sign a ueser up
+            //sign a user up
             if usernameTextField.text != nil {
                 if emailTextField.text != nil {
                     if passwordTextField.text != nil  {
