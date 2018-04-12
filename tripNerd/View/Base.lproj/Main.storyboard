@@ -40,7 +40,7 @@
                                 <rect key="frame" x="16" y="249" width="382" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lel-24-Pyv">
                                 <rect key="frame" x="131" y="300" width="152" height="32"/>
@@ -68,10 +68,17 @@
                                     <action selector="signInButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bwk-O9-awC"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7Xq-AK-grU">
+                                <rect key="frame" x="16" y="148" width="382" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="0.47684186699999997" green="0.50480759139999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="oKm-Qb-fZu" firstAttribute="trailing" secondItem="lel-24-Pyv" secondAttribute="trailing" id="0jH-Y4-Lv6"/>
+                            <constraint firstItem="7Xq-AK-grU" firstAttribute="top" secondItem="Bjk-Qt-D7T" secondAttribute="bottom" constant="22" id="9b2-EK-eOx"/>
                             <constraint firstItem="BxV-t1-2Qm" firstAttribute="top" secondItem="lel-24-Pyv" secondAttribute="bottom" constant="59" id="Ecv-zW-T5D"/>
                             <constraint firstItem="JPQ-p5-b9j" firstAttribute="leading" secondItem="BxV-t1-2Qm" secondAttribute="leading" id="EkM-nK-stZ"/>
                             <constraint firstItem="fAX-N8-nEK" firstAttribute="trailing" secondItem="JPQ-p5-b9j" secondAttribute="trailing" id="GNH-S1-vV3"/>
@@ -79,7 +86,9 @@
                             <constraint firstItem="JPQ-p5-b9j" firstAttribute="top" secondItem="fAX-N8-nEK" secondAttribute="bottom" constant="21" id="Kme-vu-HnB"/>
                             <constraint firstItem="qbG-wr-Jjq" firstAttribute="leading" secondItem="BxV-t1-2Qm" secondAttribute="trailing" constant="4" id="LQL-I0-oCs"/>
                             <constraint firstItem="BxV-t1-2Qm" firstAttribute="centerY" secondItem="qbG-wr-Jjq" secondAttribute="centerY" id="RGz-by-uDR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7Xq-AK-grU" secondAttribute="trailing" constant="16" id="TZk-fh-bPV"/>
                             <constraint firstItem="oKm-Qb-fZu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TaC-kk-tdL"/>
+                            <constraint firstItem="7Xq-AK-grU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="VLq-Xr-32w"/>
                             <constraint firstItem="fAX-N8-nEK" firstAttribute="top" secondItem="Bjk-Qt-D7T" secondAttribute="bottom" constant="72" id="bbY-9K-nC4"/>
                             <constraint firstItem="fAX-N8-nEK" firstAttribute="leading" secondItem="JPQ-p5-b9j" secondAttribute="leading" id="c4D-46-7Kf"/>
                             <constraint firstItem="oKm-Qb-fZu" firstAttribute="centerX" secondItem="Bjk-Qt-D7T" secondAttribute="centerX" id="fXN-uZ-L5M"/>
@@ -97,6 +106,7 @@
                         <outlet property="passwordTextField" destination="JPQ-p5-b9j" id="esQ-ZZ-Q7m"/>
                         <outlet property="signupButton" destination="qbG-wr-Jjq" id="137-C2-2Kb"/>
                         <outlet property="signupQuestionLabel" destination="BxV-t1-2Qm" id="pWu-y8-V1j"/>
+                        <outlet property="usernameTextField" destination="7Xq-AK-grU" id="buc-38-uwI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
