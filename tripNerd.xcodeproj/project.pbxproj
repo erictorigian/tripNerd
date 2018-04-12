@@ -12,6 +12,7 @@
 		0717915F207F90DF000C0220 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0717915D207F90DF000C0220 /* Main.storyboard */; };
 		07179161207F90E0000C0220 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07179160207F90E0000C0220 /* Assets.xcassets */; };
 		07179164207F90E0000C0220 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07179162207F90E0000C0220 /* LaunchScreen.storyboard */; };
+		16057513F9BEC49C8830814B /* Pods_tripNerd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DA09C011C0861A4D08DC788 /* Pods_tripNerd.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,9 @@
 		07179160207F90E0000C0220 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		07179163207F90E0000C0220 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		07179165207F90E0000C0220 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1DA09C011C0861A4D08DC788 /* Pods_tripNerd.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tripNerd.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDD0DEAA99C786A332B364AF /* Pods-tripNerd.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tripNerd.debug.xcconfig"; path = "Pods/Target Support Files/Pods-tripNerd/Pods-tripNerd.debug.xcconfig"; sourceTree = "<group>"; };
+		C71513EDD75CE8085DE13ABA /* Pods-tripNerd.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tripNerd.release.xcconfig"; path = "Pods/Target Support Files/Pods-tripNerd/Pods-tripNerd.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16057513F9BEC49C8830814B /* Pods_tripNerd.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				07179158207F90DF000C0220 /* tripNerd */,
 				07179157207F90DF000C0220 /* Products */,
+				DFED756DC467B249C8CFEEA1 /* Pods */,
+				EE2CE8ECC98F24D131E5B4CB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,6 +103,23 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
+		DFED756DC467B249C8CFEEA1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BDD0DEAA99C786A332B364AF /* Pods-tripNerd.debug.xcconfig */,
+				C71513EDD75CE8085DE13ABA /* Pods-tripNerd.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EE2CE8ECC98F24D131E5B4CB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1DA09C011C0861A4D08DC788 /* Pods_tripNerd.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,9 +127,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 07179168207F90E0000C0220 /* Build configuration list for PBXNativeTarget "tripNerd" */;
 			buildPhases = (
+				3BB6F7BCAD78851AAED36A43 /* [CP] Check Pods Manifest.lock */,
 				07179152207F90DF000C0220 /* Sources */,
 				07179153207F90DF000C0220 /* Frameworks */,
 				07179154207F90DF000C0220 /* Resources */,
+				2F7DF1D82A733A070D925FC0 /* [CP] Embed Pods Frameworks */,
+				125B7014A9A5A32EEEE3A043 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -161,6 +188,62 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		125B7014A9A5A32EEEE3A043 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-tripNerd/Pods-tripNerd-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2F7DF1D82A733A070D925FC0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-tripNerd/Pods-tripNerd-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/Parse/Parse.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Parse.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-tripNerd/Pods-tripNerd-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3BB6F7BCAD78851AAED36A43 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-tripNerd-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		07179152207F90DF000C0220 /* Sources */ = {
@@ -310,15 +393,13 @@
 		};
 		07179169207F90E0000C0220 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BDD0DEAA99C786A332B364AF /* Pods-tripNerd.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C57K6822B6;
 				INFOPLIST_FILE = tripNerd/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.torigian.tripNerd;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -328,15 +409,13 @@
 		};
 		0717916A207F90E0000C0220 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C71513EDD75CE8085DE13ABA /* Pods-tripNerd.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C57K6822B6;
 				INFOPLIST_FILE = tripNerd/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.torigian.tripNerd;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
