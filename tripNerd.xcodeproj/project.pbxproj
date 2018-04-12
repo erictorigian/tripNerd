@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0717915A207F90DF000C0220 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07179159207F90DF000C0220 /* AppDelegate.swift */; };
-		0717915C207F90DF000C0220 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0717915B207F90DF000C0220 /* ViewController.swift */; };
+		0717915C207F90DF000C0220 /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0717915B207F90DF000C0220 /* loginViewController.swift */; };
 		0717915F207F90DF000C0220 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0717915D207F90DF000C0220 /* Main.storyboard */; };
 		07179161207F90E0000C0220 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07179160207F90E0000C0220 /* Assets.xcassets */; };
 		07179164207F90E0000C0220 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07179162207F90E0000C0220 /* LaunchScreen.storyboard */; };
@@ -18,7 +18,7 @@
 /* Begin PBXFileReference section */
 		07179156207F90DF000C0220 /* tripNerd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tripNerd.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07179159207F90DF000C0220 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0717915B207F90DF000C0220 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0717915B207F90DF000C0220 /* loginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginViewController.swift; sourceTree = "<group>"; };
 		0717915E207F90DF000C0220 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		07179160207F90E0000C0220 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		07179163207F90E0000C0220 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -74,7 +74,7 @@
 		0717916B207F9105000C0220 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				0717915B207F90DF000C0220 /* ViewController.swift */,
+				0717915B207F90DF000C0220 /* loginViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -250,7 +250,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0717915C207F90DF000C0220 /* ViewController.swift in Sources */,
+				0717915C207F90DF000C0220 /* loginViewController.swift in Sources */,
 				0717915A207F90DF000C0220 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -399,7 +399,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C57K6822B6;
 				INFOPLIST_FILE = tripNerd/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.torigian.tripNerd;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -415,7 +418,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C57K6822B6;
 				INFOPLIST_FILE = tripNerd/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.torigian.tripNerd;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
