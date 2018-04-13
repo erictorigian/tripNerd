@@ -16,6 +16,7 @@
 		076B800E207FD93500C6AE42 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076B800D207FD93500C6AE42 /* MainViewController.swift */; };
 		076B8010207FDFC500C6AE42 /* TripCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076B800F207FDFC500C6AE42 /* TripCellTableViewCell.swift */; };
 		076B8012207FE5C400C6AE42 /* user.png in Resources */ = {isa = PBXBuildFile; fileRef = 076B8011207FE5C400C6AE42 /* user.png */; };
+		07D809D620810C0200397FAD /* TripDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D809D520810C0200397FAD /* TripDetailViewController.swift */; };
 		16057513F9BEC49C8830814B /* Pods_tripNerd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DA09C011C0861A4D08DC788 /* Pods_tripNerd.framework */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +32,7 @@
 		076B800D207FD93500C6AE42 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		076B800F207FDFC500C6AE42 /* TripCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripCellTableViewCell.swift; sourceTree = "<group>"; };
 		076B8011207FE5C400C6AE42 /* user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user.png; sourceTree = "<group>"; };
+		07D809D520810C0200397FAD /* TripDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripDetailViewController.swift; sourceTree = "<group>"; };
 		1DA09C011C0861A4D08DC788 /* Pods_tripNerd.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tripNerd.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDD0DEAA99C786A332B364AF /* Pods-tripNerd.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tripNerd.debug.xcconfig"; path = "Pods/Target Support Files/Pods-tripNerd/Pods-tripNerd.debug.xcconfig"; sourceTree = "<group>"; };
 		C71513EDD75CE8085DE13ABA /* Pods-tripNerd.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tripNerd.release.xcconfig"; path = "Pods/Target Support Files/Pods-tripNerd/Pods-tripNerd.release.xcconfig"; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 				0717915B207F90DF000C0220 /* loginViewController.swift */,
 				076B800D207FD93500C6AE42 /* MainViewController.swift */,
 				07415C382080CE84001F42CE /* AddTripViewController.swift */,
+				07D809D520810C0200397FAD /* TripDetailViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -263,6 +266,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07D809D620810C0200397FAD /* TripDetailViewController.swift in Sources */,
 				07415C392080CE84001F42CE /* AddTripViewController.swift in Sources */,
 				076B8010207FDFC500C6AE42 /* TripCellTableViewCell.swift in Sources */,
 				076B800E207FD93500C6AE42 /* MainViewController.swift in Sources */,

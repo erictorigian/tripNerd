@@ -89,4 +89,15 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
         return cell
     }
     
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showTripDetails" {
+            let destinationVC = segue.destination as? TripDetailViewController
+            
+            let tripIndex = tableView.indexPathForSelectedRow?.row
+            
+            destinationVC?.tripObject = tripObjects[tripIndex!]
+            
+        }
+    }
 }
