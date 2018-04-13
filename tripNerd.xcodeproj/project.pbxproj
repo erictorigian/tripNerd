@@ -13,6 +13,8 @@
 		07179161207F90E0000C0220 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07179160207F90E0000C0220 /* Assets.xcassets */; };
 		07179164207F90E0000C0220 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07179162207F90E0000C0220 /* LaunchScreen.storyboard */; };
 		076B800E207FD93500C6AE42 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076B800D207FD93500C6AE42 /* MainViewController.swift */; };
+		076B8010207FDFC500C6AE42 /* TripCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076B800F207FDFC500C6AE42 /* TripCellTableViewCell.swift */; };
+		076B8012207FE5C400C6AE42 /* user.png in Resources */ = {isa = PBXBuildFile; fileRef = 076B8011207FE5C400C6AE42 /* user.png */; };
 		16057513F9BEC49C8830814B /* Pods_tripNerd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DA09C011C0861A4D08DC788 /* Pods_tripNerd.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +27,8 @@
 		07179163207F90E0000C0220 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		07179165207F90E0000C0220 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		076B800D207FD93500C6AE42 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		076B800F207FDFC500C6AE42 /* TripCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripCellTableViewCell.swift; sourceTree = "<group>"; };
+		076B8011207FE5C400C6AE42 /* user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user.png; sourceTree = "<group>"; };
 		1DA09C011C0861A4D08DC788 /* Pods_tripNerd.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tripNerd.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDD0DEAA99C786A332B364AF /* Pods-tripNerd.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tripNerd.debug.xcconfig"; path = "Pods/Target Support Files/Pods-tripNerd/Pods-tripNerd.debug.xcconfig"; sourceTree = "<group>"; };
 		C71513EDD75CE8085DE13ABA /* Pods-tripNerd.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tripNerd.release.xcconfig"; path = "Pods/Target Support Files/Pods-tripNerd/Pods-tripNerd.release.xcconfig"; sourceTree = "<group>"; };
@@ -69,6 +73,7 @@
 				0717916B207F9105000C0220 /* Controller */,
 				07179160207F90E0000C0220 /* Assets.xcassets */,
 				07179165207F90E0000C0220 /* Info.plist */,
+				076B8011207FE5C400C6AE42 /* user.png */,
 			);
 			path = tripNerd;
 			sourceTree = "<group>";
@@ -87,6 +92,7 @@
 			children = (
 				0717915D207F90DF000C0220 /* Main.storyboard */,
 				07179162207F90E0000C0220 /* LaunchScreen.storyboard */,
+				076B800F207FDFC500C6AE42 /* TripCellTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -186,6 +192,7 @@
 			files = (
 				07179164207F90E0000C0220 /* LaunchScreen.storyboard in Resources */,
 				07179161207F90E0000C0220 /* Assets.xcassets in Resources */,
+				076B8012207FE5C400C6AE42 /* user.png in Resources */,
 				0717915F207F90DF000C0220 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -253,6 +260,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				076B8010207FDFC500C6AE42 /* TripCellTableViewCell.swift in Sources */,
 				076B800E207FD93500C6AE42 /* MainViewController.swift in Sources */,
 				0717915C207F90DF000C0220 /* loginViewController.swift in Sources */,
 				0717915A207F90DF000C0220 /* AppDelegate.swift in Sources */,
