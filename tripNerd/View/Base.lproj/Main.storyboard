@@ -201,6 +201,11 @@
                                 <action selector="userButtonPressed:" destination="C59-9n-HvR" id="wQ5-Rk-pzm"/>
                             </connections>
                         </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Z4H-MI-KzV">
+                            <connections>
+                                <segue destination="8Dt-IJ-EMp" kind="show" id="OMl-fw-C2r"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="kcv-bI-aKO" id="HLN-7V-nKm"/>
@@ -210,6 +215,75 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tzi-DN-yMC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1756.521739130435" y="29.347826086956523"/>
+        </scene>
+        <!--Add New Trip-->
+        <scene sceneID="REU-V3-MM6">
+            <objects>
+                <viewController title="Add New Trip" id="8Dt-IJ-EMp" customClass="AddTripViewController" customModule="tripNerd" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="akp-y2-iSW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user.png" translatesAutoresizingMaskIntoConstraints="NO" id="gNa-oR-PPi">
+                                <rect key="frame" x="87" y="89" width="240" height="240"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="240" id="L8H-VS-ysh"/>
+                                    <constraint firstAttribute="width" constant="240" id="osA-C0-JqL"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="x31-Sw-P5n" appends="YES" id="Fog-Xk-2o9"/>
+                                </connections>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Trip name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Nb7-sQ-p30">
+                                <rect key="frame" x="16" y="349" width="382" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Trip Summary" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dnA-Rl-gzA">
+                                <rect key="frame" x="16" y="399" width="382" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E18-CS-LAV">
+                                <rect key="frame" x="175" y="449" width="64" height="30"/>
+                                <state key="normal" title="Save Trip"/>
+                                <connections>
+                                    <action selector="saveTripButtonPressed:" destination="8Dt-IJ-EMp" eventType="touchUpInside" id="lyd-h2-BuX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="gNa-oR-PPi" firstAttribute="centerX" secondItem="akp-y2-iSW" secondAttribute="centerX" id="04R-qM-P60"/>
+                            <constraint firstItem="gNa-oR-PPi" firstAttribute="top" secondItem="WfU-cr-WGA" secondAttribute="top" constant="25" id="2Ct-X7-XSf"/>
+                            <constraint firstItem="Nb7-sQ-p30" firstAttribute="leading" secondItem="WfU-cr-WGA" secondAttribute="leading" constant="16" id="2ag-8L-DyA"/>
+                            <constraint firstItem="E18-CS-LAV" firstAttribute="centerX" secondItem="akp-y2-iSW" secondAttribute="centerX" id="Erz-qf-dBP"/>
+                            <constraint firstItem="Nb7-sQ-p30" firstAttribute="top" secondItem="gNa-oR-PPi" secondAttribute="bottom" constant="20" id="IT5-vc-or5"/>
+                            <constraint firstItem="E18-CS-LAV" firstAttribute="top" secondItem="dnA-Rl-gzA" secondAttribute="bottom" constant="20" id="PWp-SM-tBC"/>
+                            <constraint firstItem="WfU-cr-WGA" firstAttribute="trailing" secondItem="dnA-Rl-gzA" secondAttribute="trailing" constant="16" id="Rkc-T7-FqJ"/>
+                            <constraint firstItem="dnA-Rl-gzA" firstAttribute="leading" secondItem="WfU-cr-WGA" secondAttribute="leading" constant="16" id="awS-LA-C3A"/>
+                            <constraint firstItem="dnA-Rl-gzA" firstAttribute="top" secondItem="Nb7-sQ-p30" secondAttribute="bottom" constant="20" id="tep-Ml-DO7"/>
+                            <constraint firstItem="WfU-cr-WGA" firstAttribute="trailing" secondItem="Nb7-sQ-p30" secondAttribute="trailing" constant="16" id="uGs-x6-iex"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="WfU-cr-WGA"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="gNa-oR-PPi" id="lVG-NW-D98"/>
+                        <outlet property="tripNameTextField" destination="Nb7-sQ-p30" id="s6M-QP-gIe"/>
+                        <outlet property="tripSummaryTextField" destination="dnA-Rl-gzA" id="e80-SA-Amn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MtA-Jd-nDr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="x31-Sw-P5n">
+                    <connections>
+                        <action selector="photoTapped:" destination="8Dt-IJ-EMp" id="0kP-gi-O0G"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="2628.985507246377" y="-280.43478260869568"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="YBf-SM-YkH">

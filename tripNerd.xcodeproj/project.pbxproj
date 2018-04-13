@@ -12,6 +12,7 @@
 		0717915F207F90DF000C0220 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0717915D207F90DF000C0220 /* Main.storyboard */; };
 		07179161207F90E0000C0220 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07179160207F90E0000C0220 /* Assets.xcassets */; };
 		07179164207F90E0000C0220 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07179162207F90E0000C0220 /* LaunchScreen.storyboard */; };
+		07415C392080CE84001F42CE /* AddTripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07415C382080CE84001F42CE /* AddTripViewController.swift */; };
 		076B800E207FD93500C6AE42 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076B800D207FD93500C6AE42 /* MainViewController.swift */; };
 		076B8010207FDFC500C6AE42 /* TripCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076B800F207FDFC500C6AE42 /* TripCellTableViewCell.swift */; };
 		076B8012207FE5C400C6AE42 /* user.png in Resources */ = {isa = PBXBuildFile; fileRef = 076B8011207FE5C400C6AE42 /* user.png */; };
@@ -26,6 +27,7 @@
 		07179160207F90E0000C0220 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		07179163207F90E0000C0220 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		07179165207F90E0000C0220 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07415C382080CE84001F42CE /* AddTripViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTripViewController.swift; sourceTree = "<group>"; };
 		076B800D207FD93500C6AE42 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		076B800F207FDFC500C6AE42 /* TripCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripCellTableViewCell.swift; sourceTree = "<group>"; };
 		076B8011207FE5C400C6AE42 /* user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user.png; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 			children = (
 				0717915B207F90DF000C0220 /* loginViewController.swift */,
 				076B800D207FD93500C6AE42 /* MainViewController.swift */,
+				07415C382080CE84001F42CE /* AddTripViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -260,6 +263,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07415C392080CE84001F42CE /* AddTripViewController.swift in Sources */,
 				076B8010207FDFC500C6AE42 /* TripCellTableViewCell.swift in Sources */,
 				076B800E207FD93500C6AE42 /* MainViewController.swift in Sources */,
 				0717915C207F90DF000C0220 /* loginViewController.swift in Sources */,
