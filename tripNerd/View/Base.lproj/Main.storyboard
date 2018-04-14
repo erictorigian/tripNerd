@@ -225,7 +225,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user.png" translatesAutoresizingMaskIntoConstraints="NO" id="g1c-eS-0Nc">
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user.png" translatesAutoresizingMaskIntoConstraints="NO" id="g1c-eS-0Nc">
                                 <rect key="frame" x="20" y="78" width="129" height="119"/>
                                 <gestureRecognizers/>
                                 <constraints>
@@ -277,12 +277,20 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="xH9-u3-izH">
+                                <rect key="frame" x="174" y="64" width="240" height="140"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="140" id="FKE-pL-cWg"/>
+                                    <constraint firstAttribute="width" constant="240" id="OdL-kI-15y"/>
+                                </constraints>
+                            </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="fQH-ce-PSX" firstAttribute="top" secondItem="cAh-GH-xC0" secondAttribute="bottom" constant="8" symbolic="YES" id="2lB-ml-L2A"/>
                             <constraint firstItem="mSs-Xz-AYX" firstAttribute="leading" secondItem="Ovb-Zi-lrs" secondAttribute="leading" constant="12" id="AJz-h6-VKP"/>
                             <constraint firstItem="fQH-ce-PSX" firstAttribute="top" secondItem="9mJ-Jm-2me" secondAttribute="bottom" constant="56" id="DaT-D5-ahI"/>
+                            <constraint firstItem="Ovb-Zi-lrs" firstAttribute="trailing" secondItem="xH9-u3-izH" secondAttribute="trailing" id="EA5-dZ-YwZ"/>
                             <constraint firstItem="fQH-ce-PSX" firstAttribute="leading" secondItem="YH3-LC-WBn" secondAttribute="leading" id="EDK-WB-VQt"/>
                             <constraint firstItem="mSs-Xz-AYX" firstAttribute="leading" secondItem="9mJ-Jm-2me" secondAttribute="leading" id="GVR-oY-Fb7"/>
                             <constraint firstItem="g1c-eS-0Nc" firstAttribute="leading" secondItem="Ovb-Zi-lrs" secondAttribute="leading" constant="20" id="M0E-vB-8tW"/>
@@ -290,6 +298,7 @@
                             <constraint firstItem="g1c-eS-0Nc" firstAttribute="top" secondItem="Ovb-Zi-lrs" secondAttribute="top" constant="14" id="NuE-g1-Mhv"/>
                             <constraint firstItem="g1c-eS-0Nc" firstAttribute="centerX" secondItem="mSs-Xz-AYX" secondAttribute="centerX" constant="-118.5" id="aNz-dI-TpF"/>
                             <constraint firstItem="mSs-Xz-AYX" firstAttribute="trailing" secondItem="9mJ-Jm-2me" secondAttribute="trailing" id="hHw-Yc-IaX"/>
+                            <constraint firstItem="xH9-u3-izH" firstAttribute="top" secondItem="Ovb-Zi-lrs" secondAttribute="top" id="jeM-Bv-CYU"/>
                             <constraint firstItem="cAh-GH-xC0" firstAttribute="centerX" secondItem="YH3-LC-WBn" secondAttribute="centerX" id="niW-iO-0cd"/>
                             <constraint firstItem="fQH-ce-PSX" firstAttribute="bottom" secondItem="Ovb-Zi-lrs" secondAttribute="bottom" id="ray-kh-B59"/>
                             <constraint firstAttribute="trailing" secondItem="fQH-ce-PSX" secondAttribute="trailing" id="vvE-YX-kZ6"/>

@@ -8,17 +8,27 @@
 
 import UIKit
 import Parse
+import CoreLocation
 
-class AddTripViewController: UIViewController {
+class AddTripViewController: UIViewController, CLLocationManagerDelegate {
 
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var tripNameTextField: UITextField!
     @IBOutlet weak var tripSummaryTextField: UITextField!
     
+    let locationManager = CLLocationManager()
+    var lastLocation = CLLocation()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        tripNameTextField.becomeFirstResponder()
+        
+        locationManager.delegate = self
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager.requestWhenInUseAuthorization()
+        locationManager.startUpdatingLocation()
     }
 
     //MARK - IBActions
@@ -33,9 +43,13 @@ class AddTripViewController: UIViewController {
         } else {
             let tripObject = PFObject(className: "Trips")
             
+            let point = PFGeoPoint(location: lastLocation )
+            
             tripObject["tripName"] = tripNameTextField.text
             tripObject["tripSummary"] = tripSummaryTextField.text
             tripObject["tripOwner"] = PFUser.current()?.username
+            tripObject["location"] = point
+            
             
             tripObject.saveInBackground { (success, error) in
                 if error == nil {
@@ -56,4 +70,9 @@ class AddTripViewController: UIViewController {
         
         self.present(alert, animated: true, completion: nil)
     }
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        self.lastLocation = locations[0]
+    }
+    
 }
